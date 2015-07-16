@@ -2,6 +2,7 @@
 
 names = []
 for name in range(3):
+    print name
     name = raw_input("Noem een naam: ")
     names.append(name)
 
