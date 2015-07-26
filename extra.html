@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cursus Programmeren en Dataverwerking - Extra opdrachten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3><a href="index.html">Terug naar index</a></h3>
+    <h1>Extra opdrachten</h1>
+
+    <h2>Opdracht A</h2>
+    <p>Schrijf een programma wat de body-mass index berekent (BMI). Dat doe je door:</p>
+    <ul>
+        <li>Het gewicht in kilogrammen te vragen</li>
+        <li>De lengte te vragen in meters (dat is dus geen integer!)</li>
+        <li>De lengte vermenigvuldig je met zichzelf (in het kwadraat).</li>
+        <li>Je deelt nu het gewicht door dit kwadraat</li>
+        <li>Print het BMI, afgerond op twee cijfers na de komma, en tevens of
+        het ondergewicht (kleiner dan 18.5 kilo), gezond gewicht (18.5 - 25),
+        of overgewicht (meer dan 25) is.</li>
+    </ul>
+
+    <h3>Tips</h3>
+    <ul>
+        <li>Je moet converteren naar zowel <code>int</code>, <code>float</code>
+    en <code>str</code>.</li>
+        <li>Probeer het laatste deel (onder/over gewicht) te doen met <code>if</code>,
+        <code>elif</code> en <code>else</code>.</li>
+        <li>Om af te ronden maak je gebruik van de functie <code>round</code>. Google
+        maar hoe je dat gebruikt.</li>
+    </ul>
+
+    <h2>Opdracht B</h2>
+    <p>Schrijf een namenlijst. Het programma moet zo werken:</p>
+    <ul>
+        <li>Vraag de gebruiker om een cijfer: 1 of 2</li>
+        <li>Bij '1' toon je alle namen in de lijst</li>
+        <li>Bij '2' vraag je een naam aan de gebruiker en voeg je die toe aan de lijst</li>
+        <li>Als je klaar bent met '1' of '2' begin je weer met het vragen van een cijfer, dit kan eindeloos zo doorgaan.</li>
+    </ul>
+
+    <h3>Tips</h3>
+    <ul>
+        <li>Om in een eindeloze loop terecht te komen kun je gebruik maken van het
+        <code>while</code> commando. Bijvoorbeeld:
+        <pre>
+while True:
+    print "Dit blijft eeuwig doorgaan"
+        </pre></li>
+        <li>Je kunt voor de opdracht heel goed gebruik maken van functies. Je kunt een functie maken
+        voor het tonen van de lijst (die noem je bijvoorbeeld <code>showlist</code>), en een
+        andere functie voor het toevoegen van een naam (die noem je bijvoorbeeld <code>addname</code>):
+        <pre>
+def showlist():
+    # Hier toon je de lijst
+
+def addname():
+    # Hier voeg je een naam toe aan de lijst
+
+while True:
+    # Hier bedenk je iets om een keuze te vragen
+    if choice == "1":
+        showlist()
+    elif choice =="2":
+        addname()
+        </pre></li>
+    </ul>
+
+    <h2>Opdracht C</h2>
+    <p>Schrijf een programma wat vraagt om een ander bestand. Print de naam van
+    het bestand, open dat bestand en loop vervolgens over de regels van het
+    bestand heen en print van elke regel:</p>
+
+    <ul>
+        <li>Op welk regelnummer je zit.</li>
+        <li>De regel zelf.</li>
+        <li>Hoeveel tekens er in die regel zitten.</li>
+        <li>Hoeveel woorden er in die regel zitten.</li>
+    </ul>
+
+    <h3>Tips</h3>
+    <ul>
+        <li>Voor het tellen kun je gebruik maken van de <code>enumerate</code>
+        functie <em>of</em> een variable die je op <code>0</code> zet en bij elke
+        iteratie in je <code>for</code> loop met <code>1</code> verhoogt.</li>
+        <li>Om woorden te tellen is de makkelijkste manier om gebruik te maken
+        van de <code>split</code> methode met een spatie, en vervolgens te
+        tellen hoeveel elementen je hebt.</li>
+    </ul>
+</body>
+</html>
